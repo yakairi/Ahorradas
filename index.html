@@ -3,9 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ahorradas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Protest+Riot&display=swap" rel="stylesheet">
+
+<script>
+
+    tailwind.config = {
+    darkMode: "class",
+    theme: {
+    extend: {
+
+    colors: {
+    primary: "#949ac9",
+    secondary: "#005eff",
+     border: "#1414b8",
+    },
+
+    fontFamily: {
+    sans: ['"Dosis"'],
+    serif: ['"Protest Riot"'],
+            },
+    
+          },
+        }
+    };
+    </script>
 </head>
 <body>
     
+
+<main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5">
+ <!-- seccin inicial balance  -->
+
+
+<section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
+
+<div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
+     
+
+<div class="p-4"><!-- div contenedor balace -->
+
+              <h2 class="font-serif text-xl text-center">Balance</h2>
+            
+     <div class="text-lg flex flex-col gap-2  drop-shadow-2xl ">
+              
+            <div class="flex columns-2 justify-between  ">
+                
+                     <div>
+                         <h3>Ganancias</h3>
+                     </div>
+                
+                <div class="text-green-600">
+                 
+                       <span>+$</span>
+                       <span>0</span>
+                </div>
+          </div>
+    </div>
+              
+    <div class="flex columns-2 justify-between">
+               
+        <div>
+                 
+            <h3>Gastos</h3>
+                
+        </div>
+                
+        <div class="text-red-600">
+                 
+            <span>-$</span>
+                 
+            <span>0</span>
+               
+        </div>
+             
+    </div>
+              
+    <div class="flex columns-2 justify-between text-2xl ">
+    
+        <div>
+                  
+            <h3>Total</h3>
+                
+        </div>
+                
+        <div>
+                  
+            <span>$</span>
+                 
+            <span>0</span>
+               
+        </div>
+              
+    </div>
+            
+       
+
+</div><!-- fin div contenedor balance -->
+
+ 
+
+ <!--        FILTROS         -->
+
+ <!--seccion filtros -->
+         
+ <!-- <section class="p-4 shadow-md rounded bg-primary bg-opacity-5 backdrop-filter backdrop-blur-lg flex justify-between flex-col dark:shadow-[#c8d6bf] gap-2"> -->
+            
+    <div class="flex columns-2 justify-between gap-4 items-center p-5">
+              
+                 <div>
+               
+                    <h2 class="font-sans text-lg">Filtros</h2>
+              
+                </div>
+              
+                <div>
+                
+                <button class="px-3 rounded hover:text-dark bg-primary dark:text-light hover:bg-secondary shadow-inner font-bold dark:bg-secondary dark:hover:bg-dark dark:hover:text-secondary">
+                  Ocultar filtros
+                </button>
+              
+            </div>
+
+        </div>
+
+            
+    <div class="flex flex-col gap-5">
+              <!-- INPUT FILTRO TIPO -->
+
+              <label for="type-filters">Tipo</label>
+              
+         <select name="tipos-filtros" id="type-filters" class="bg-primary rounded p-1 ">
+                <option value="TODOS">Todos</option>
+                <option value="GASTOS">Gasto</option>
+                <option value="GANANCIA">Ganancia</option>
+        </select>
+
+
+   </div>
+
+ <!-- INPUT FILTRO CATEGORIA -->
+<label for="type-category">Categoría</label>
+              
+<select name="categorias" id="type-category" class="bg-primary rounded p-1 hover:bg-accent dark:bg-secondary dark:text-light dark:hover:bg-dark">
+                
+      <option value="Todas">Todas</option>
+               
+      <option value="Comida">Comida</option>
+                
+      <option value="Servicio">Servicio</option>
+                
+      <option value="Salidas">Salidas</option>
+                
+      <option value="Educación">Educación</option>
+               
+      <option value="Transporte">Transporte</option>
+              
+</select>
+
+<!-- INPUT FILTRO FECHA-->
+
+     <label for="expense-date">Desde</label>
+              
+     <input id="expense-date" type="date" name="date" class="bg-primary rounded p-1 hover:bg-accent dark:bg-secondary " />
+
+              <!-- INPUT ORDENAR POR-->
+
+     <label for="order-expense">Ordenar por</label>
+    
+         <select  name="Ordenar" id="order-expense" class="bg-primary rounded p-1 hover:bg-accent dark:bg-secondary  ">
+               
+            
+               <option value="Más reciente">Más reciente</option>
+                <option value="Más antiguo">Más antiguo</option>
+                <option value="Mayor monto">Mayor monto</option>
+                <option value="Menor monto">Menor monto</option>
+                <option value="A/Z">A/Z</option>
+                <option value="Z/A">Z/A</option>
+              
+            </select>
+              
+            </div>
+<!-- </section> fin seccion filtros --> 
+          
+        </div>
+
+<!-- seccion operaciones -->
+
+<section class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center ">
+ 
+<div class="flex columns-2 justify-evenly gap-2 items-center"><!-- div contenedor operaciones -->
+   
+     <div >
+       
+        <h2 class="font-serif text-xl">operaciones</h2>
+     </div>
+  <!-- boton nueva operacion -->
+    <div >
+
+        <button  class="gap-2  items-center flex w-full px-3 rounded hover:text-dark bg-primary dark:text-light hover:bg-secondary shadow-inner font-bold dark:bg-secondary dark:hover:bg-dark dark:hover:text-secondary">
+                 
+       
+         Nueva operación
+       
+    </div>
+</div> <!-- div contenedor operaciones -->
+   <div class="flex flex-col justify-center items-center">
+     
+        <div class="flex w-96 justify-center my-8 p-4"> 
+             
+           <img src="imagenes/undraw_savings_re_eq4w.svg" alt="">
+
+       </div>
+       <div class="flex flex-col justify-center text-center">
+              <div class="text-2xl font-bold">
+                <h2>Sin resultados disponibles</h2>
+              </div>
+              <div class="text-lg">
+                <p>Revisa tus filtros o añade nuevas operaciones</p>
+              </div>
+            </div>
+   </div>
+   
+
+</section>
+
+
+
+</div><!-- fin div contenedor  -->
+
+</section><!-- fin seccion contenedor -->
+
+</main>
+
+
 </body>
 </html>
