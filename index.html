@@ -12,7 +12,6 @@
 <script>
 
     tailwind.config = {
-    darkMode: "class",
     theme: {
     extend: {
 
@@ -36,200 +35,178 @@
     
 
 <main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5">
- <!-- seccin inicial balance  -->
+
 
 
 <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
 
 <div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
-     
+<!-- contebedores principales -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
 
-<div class="p-4"><!-- div contenedor balace -->
-
-              <h2 class="font-serif text-xl text-center">Balance</h2>
-            
-     <div class="text-lg flex flex-col gap-2  drop-shadow-2xl ">
-              
-            <div class="flex columns-2 justify-between  ">
-                
-                     <div>
-                         <h3>Ganancias</h3>
-                     </div>
-                
-                <div class="text-green-600">
-                 
-                       <span>+$</span>
-                       <span>0</span>
-                </div>
-          </div>
-    </div>
-              
-    <div class="flex columns-2 justify-between">
-               
-        <div>
-                 
-            <h3>Gastos</h3>
-                
-        </div>
-                
-        <div class="text-red-600">
-                 
-            <span>-$</span>
-                 
-            <span>0</span>
-               
-        </div>
-             
-    </div>
-              
-    <div class="flex columns-2 justify-between text-2xl ">
-    
-        <div>
+                 <div class="p-4">  <!-- contenedor balance  -->
                   
-            <h3>Total</h3>
+                     <h2 class="font-serif text-xl text-center"> balance</h2>
+
+                <div class="text-lg flex flex-col gap-2  drop-shadow-2xl" > <!--  balance  -->
                 
-        </div>
-                
-        <div>
-                  
-            <span>$</span>
+                    <div class="flex columns-2 justify-between"><!-- ganacias  -->
+
+                        <div>
+                            <h3>ganancias</h3>
+                        </div>
+
+                        <div class="text-green-600">
                  
-            <span>0</span>
-               
-        </div>
-              
-    </div>
-            
-       
+                           <span>+$</span>
+                           <span>0</span>
+                        </div>
 
-</div><!-- fin div contenedor balance -->
+                    </div><!-- fin ganancias  -->
 
+                <div class="flex columns-2 justify-between"><!-- gastos  -->
+                    <div>
+                        <h3>gastos</h3>
+                    </div>
+
+                    <div class="text-red-600" >
+                        <span>-$</span>
+                        <span>0</span>
+                    </div>
+                </div><!-- fin gastos  -->
+
+                <div class="flex columns-2 justify-between text-2xl "><!--total -->
+                   
+                    <div>
+                        <h3>total</h3>
+                    </div>
+                    
+                    <div>
+                        <spa>$</spa>
+                        <spa>0</spa>
+                    </div>
+
+                </div><!-- fin total  -->
+
+            </div> <!-- fin balance  -->
+        </div> <!--fin contenedor balance  -->
  
 
  <!--        FILTROS         -->
 
  <!--seccion filtros -->
          
- <!-- <section class="p-4 shadow-md rounded bg-primary bg-opacity-5 backdrop-filter backdrop-blur-lg flex justify-between flex-col dark:shadow-[#c8d6bf] gap-2"> -->
-            
-    <div class="flex columns-2 justify-between gap-4 items-center p-5">
-              
-                 <div>
-               
-                    <h2 class="font-sans text-lg">Filtros</h2>
-              
-                </div>
-              
-                <div>
-                
-                <button class="px-3 rounded hover:text-dark bg-primary dark:text-light hover:bg-secondary shadow-inner font-bold dark:bg-secondary dark:hover:bg-dark dark:hover:text-secondary">
-                  Ocultar filtros
-                </button>
-              
-            </div>
+ 
+   <div class="flex columns justify-between gap-4 items-center p-5" >  <!-- contenedor filtros -->
 
-        </div>
+
+           <div>
+               <h2 class="font-serif text-xl ">filtros</h2>
+           </div>
+        
+           <div class="px-3 rounded-lg hover:text-dark bg-primary  hover:bg-secondary   "> <!-- boton ocultar filtros -->
+             <button>ocultar filtros</button>
+           </div><!-- boton ocultar filtros -->
+
+   
+  </div> <!--fin contenedor filtros  -->
 
             
-    <div class="flex flex-col gap-5">
-              <!-- INPUT FILTRO TIPO -->
+    <div class="flex flex-col gap-5">    <!-- inputs tipo filtro-->
+          
 
               <label for="type-filters">Tipo</label>
               
-         <select name="tipos-filtros" id="type-filters" class="bg-primary rounded p-1 ">
+            <select name="tipos-filtros" id="type-filters" class="bg-primary rounded p-1 ">
                 <option value="TODOS">Todos</option>
                 <option value="GASTOS">Gasto</option>
                 <option value="GANANCIA">Ganancia</option>
-        </select>
+           </select>
+    </div>    <!-- fin inputs tipo filtro-->
 
+ <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- inputs filtros categorias-->
 
-   </div>
-
- <!-- INPUT FILTRO CATEGORIA -->
-<label for="type-category">Categoría</label>
+           <label for="type-category">Categoría</label>
               
-<select name="categorias" id="type-category" class="bg-primary rounded p-1 hover:bg-accent dark:bg-secondary dark:text-light dark:hover:bg-dark">
+                  <select name="categorias" id="type-category" class="bg-primary rounded p-1 hover:bg-accent ">
                 
-      <option value="Todas">Todas</option>
-               
-      <option value="Comida">Comida</option>
-                
-      <option value="Servicio">Servicio</option>
-                
-      <option value="Salidas">Salidas</option>
-                
-      <option value="Educación">Educación</option>
-               
-      <option value="Transporte">Transporte</option>
-              
-</select>
+                    <option value="Todas">Todas</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Servicio">Servicio</option>
+                    <option value="Salidas">Salidas</option>
+                    <option value="Educación">Educación</option>
+                    <option value="Transporte">Transporte</option>
 
-<!-- INPUT FILTRO FECHA-->
+                  </select>       <!--fin inputs filtros categorias-->
+           
 
-     <label for="expense-date">Desde</label>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- inputs filtros tipo fecha-->
+
+           <label for="expense-date">Desde</label>
               
-     <input id="expense-date" type="date" name="date" class="bg-primary rounded p-1 hover:bg-accent dark:bg-secondary " />
+              <input id="expense-date" type="date" name="date" class="bg-primary rounded p-1 hover:bg-accent  " />
 
               <!-- INPUT ORDENAR POR-->
 
-     <label for="order-expense">Ordenar por</label>
+               <label for="order-expense">Ordenar por</label>
     
-         <select  name="Ordenar" id="order-expense" class="bg-primary rounded p-1 hover:bg-accent dark:bg-secondary  ">
+                  <select  name="Ordenar" id="order-expense" class="bg-primary rounded p-1 hover:bg-accent  ">
                
-            
-               <option value="Más reciente">Más reciente</option>
-                <option value="Más antiguo">Más antiguo</option>
-                <option value="Mayor monto">Mayor monto</option>
-                <option value="Menor monto">Menor monto</option>
-                <option value="A/Z">A/Z</option>
-                <option value="Z/A">Z/A</option>
+                     <option value="Más reciente">Más reciente</option>
+                     <option value="Más antiguo">Más antiguo</option>
+                     <option value="Mayor monto">Mayor monto</option>
+                     <option value="Menor monto">Menor monto</option>
+                     <option value="A/Z">A/Z</option>
+                     <option value="Z/A">Z/A</option>
               
-            </select>
-              
-            </div>
-<!-- </section> fin seccion filtros --> 
+                  </select>
+
+</div><!-- fin inputs filtros -->
           
-        </div>
 
 <!-- seccion operaciones -->
 
-<section class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center ">
- 
-<div class="flex columns-2 justify-evenly gap-2 items-center"><!-- div contenedor operaciones -->
-   
-     <div >
-       
-        <h2 class="font-serif text-xl">operaciones</h2>
-     </div>
-  <!-- boton nueva operacion -->
-    <div >
+              <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center "> <!-- seccion operaciones -->
 
-        <button  class="gap-2  items-center flex w-full px-3 rounded hover:text-dark bg-primary dark:text-light hover:bg-secondary shadow-inner font-bold dark:bg-secondary dark:hover:bg-dark dark:hover:text-secondary">
-                 
-       
-         Nueva operación
-       
-    </div>
-</div> <!-- div contenedor operaciones -->
-   <div class="flex flex-col justify-center items-center">
-     
-        <div class="flex w-96 justify-center my-8 p-4"> 
-             
-           <img src="imagenes/undraw_savings_re_eq4w.svg" alt="">
+                  <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
+                    
+                    <div>
+                        <h2  class="font-serif text-xl">operaciones</h2>
+                    </div>
+                    <div>
+                        <button class=" px-3 rounded-lg  bg-primary  hover:bg-secondary" >
+                            nueva operacion
+                        </button>
+                    </div>
 
-       </div>
-       <div class="flex flex-col justify-center text-center">
-              <div class="text-2xl font-bold">
-                <h2>Sin resultados disponibles</h2>
-              </div>
-              <div class="text-lg">
-                <p>Revisa tus filtros o añade nuevas operaciones</p>
-              </div>
-            </div>
-   </div>
-   
 
-</section>
+                  </div> <!--fin contenedor operaciones -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+ <div class="flex flex-col justify-center items-center"><!-- contenedor imagen operaciones -->
+
+                     <div class="flex  justify-center my-8 p-4 w-96 "> 
+                        <img src="imagenes/undraw_savings_re_eq4w.svg" alt="imagen representativa">
+                     </div>
+         
+                 </div><!--fin contenedor imagen operaciones -->
+
+                 <div class="flex flex-col font-sans justify-center text-center" ><!-- contenedor texto operaciones -->
+                   
+                    <div  class="text-2xl ">
+                        <p>sin resultados disponibles</p>
+                        
+                    </div>
+                    <div class="text-lg">
+                        <p>Revisa tus filtros o añade nuevas operaciones</p>
+                    </div>
+
+                 </div><!-- contenedor texto operaciones -->
+                   
+               </div>   <!-- fin seccion operaciones -->
+
+
 
 
 
