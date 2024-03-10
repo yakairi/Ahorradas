@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Protest+Riot&display=swap" rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/45fa939a1d.js" crossorigin="anonymous"></script>
+
 <script>
 
     tailwind.config = {
@@ -33,18 +35,17 @@
 </head>
 <body>
     
-
+  
+             
 <main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5">
 
+ <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor principal -->
 
-
-<section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
-
-<div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
-<!-- contebedores principales -->
+   <div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
+           <!-- contebedores principales -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
 
-                 <div class="p-4">  <!-- contenedor balance  -->
+                 <div class="p-4 shadow-lg shadow-blue-500/50">  <!-- contenedor balance  -->
                   
                      <h2 class="font-serif text-xl text-center"> balance</h2>
 
@@ -95,9 +96,10 @@
  <!--        FILTROS         -->
 
  <!--seccion filtros -->
-         
+   
+<div class="flex flex-col p-1 shadow-lg shadow-blue-500/50"><!-- inicio seccion filtros -->
  
-   <div class="flex columns justify-between gap-4 items-center p-5" >  <!-- contenedor filtros -->
+   <div class="flex columns justify-between gap-4 items-center p-5 shadow-lg " >  <!-- contenedor filtros -->
 
 
            <div>
@@ -165,10 +167,12 @@
 
 </div><!-- fin inputs filtros -->
           
+</div><!-- fin seccion filtros -->
 
-<!-- seccion operaciones -->
 
-              <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center "> <!-- seccion operaciones -->
+<!-- inicioseccion operaciones -->
+
+              <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center shadow-lg shadow-blue-500/50  "> <!-- seccion operaciones -->
 
                   <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
                     
@@ -184,10 +188,10 @@
 
                   </div> <!--fin contenedor operaciones -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
- <div class="flex flex-col justify-center items-center"><!-- contenedor imagen operaciones -->
+ <div class="flex flex-col justify-center items-center  "><!-- contenedor imagen operaciones -->
 
                      <div class="flex  justify-center my-8 p-4 w-96 "> 
-                        <img src="imagenes/undraw_savings_re_eq4w.svg" alt="imagen representativa">
+                        <img src="imagenes/undraw_savings_re_eq4w.svg"   alt="imagen representativa">
                      </div>
          
                  </div><!--fin contenedor imagen operaciones -->
@@ -206,7 +210,109 @@
                    
                </div>   <!-- fin seccion operaciones -->
 
+<!--------------------seccion  categorias----------------------------------------------- -->
 
+<!-- ------------------------------------------------------------------------------ -->
+<div class="md:column md:w-8/12 lg:w-10/12 md:offset-2 md:offset-1 shadow-lg shadow-blue-500/50" >
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-6">Categorías</h2>
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="categoria-input">Nombre</label>
+    <div class="flex">
+      <div class="flex-grow">
+        <input class="w-full p-2 border border-gray-300 rounded focus:border-indigo-500 focus:outline-none" type="text" name="" id="categoria-input">
+      </div>
+      <div class="ml-2">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+          Agregar
+        </button>
+      </div>
+    </div>
+    <!-- categoria comida -->
+    <div class="mt-6" id="categorias">
+      <div class="mb-3">
+        <div class="flex items-center">
+          <div class="flex-grow">
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">Comida</span>
+          </div>
+          <div class="ml-4">
+            <a href="#" aria-label="icono editar"class="text-sm text-blue-500 hover:text-blue-700 mr-2">
+                <i class="fa-regular fa-pen-to-square"></i></a>
+            <a href="#" aria-label="icono eliminar" class="text-sm text-red-500 hover:text-red-700">
+                 <i class="fa-regular fa-trash-can"></i></a>
+          </div>
+        </div>
+      </div>
+<!-- -------------------------------------------------------- -->
+<!-- categoria trabajo -->
+      <div class="mt-6" id="categorias">
+      <div class="mb-3">
+        <div class="flex items-center">
+          <div class="flex-grow">
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">trabajo</span>
+          </div>
+          <div class="ml-4">
+           
+            <a href="#" aria-label="icono editar"class="text-sm text-blue-500 hover:text-blue-700 mr-2">
+                <i class="fa-regular fa-pen-to-square"></i></a>
+            <a href="#" aria-label="icono eliminar" class="text-sm text-red-500 hover:text-red-700">
+                 <i class="fa-regular fa-trash-can"></i></a>
+          </div>
+        </div>
+      </div>
+<!-- --------------------------------------------------------------- -->
+<!-- categoria servicios -->
+<div class="mt-6 "  id="categorias">
+      <div class="mb-3">
+        <div class="flex items-center">
+          <div class="flex-grow">
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">Servicios</span>
+          </div>
+          <div class="ml-4">
+             <a href="#" aria-label="icono editar"class="text-sm text-blue-500 hover:text-blue-700 mr-2">
+                <i class="fa-regular fa-pen-to-square"></i></a>
+            <a href="#" aria-label="icono eliminar" class="text-sm text-red-500 hover:text-red-700">
+                 <i class="fa-regular fa-trash-can"></i></a>
+          </div>
+        </div>
+      </div>
+<!-- ----------------------------------------------------------------------------------------- -->
+<!-- categoria educacion -->
+      <div class="mt-6" id="categorias">
+      <div class="mb-3">
+        <div class="flex items-center">
+          <div class="flex-grow">
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">educacion</span>
+          </div>
+          <div class="ml-4">
+             <a href="#" aria-label="icono editar"class="text-sm text-blue-500 hover:text-blue-700 mr-2">
+                <i class="fa-regular fa-pen-to-square"></i></a>
+            <a href="#" aria-label="icono eliminar" class="text-sm text-red-500 hover:text-red-700">
+                 <i class="fa-regular fa-trash-can"></i></a>
+          </div>
+        </div>
+      </div>
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- categoria transporte -->
+      <div class="mt-6" id="categorias">
+      <div class="mb-3">
+        <div class="flex items-center">
+          <div class="flex-grow">
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">transporte</span>
+          </div>
+          <div class="ml-4">
+             <a href="#" aria-label="icono editar"class="text-sm text-blue-500 hover:text-blue-700 mr-2">
+                <i class="fa-regular fa-pen-to-square"></i></a>
+            <a href="#" aria-label="icono eliminar" class="text-sm text-red-500 hover:text-red-700">
+                 <i class="fa-regular fa-trash-can"></i></a>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </div><!--fin  categorias -->
+</div><!-- fin seccion categorias -->
+<!-- ---------------------------------------------------------------------------------- -->
 
 
 
