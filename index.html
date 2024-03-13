@@ -213,11 +213,14 @@
 <!--------------------seccion  categorias----------------------------------------------- -->
 
 <!-- ------------------------------------------------------------------------------ -->
-<div class="md:column md:w-8/12 lg:w-10/12 md:offset-2 md:offset-1 shadow-lg shadow-blue-500/50">
+
+<!-- md:column md:w-8/12 lg:w-10/12 md:offset-2 md:offset-1 -->
+
+<div class="w-full shadow-lg shadow-blue-500/50">
   <!-- seccion categorias -->
-  <div class="bg-white rounded-lg shadow-md p-6">
+  <div class="bg-white rounded-lg shadow-md p-6 ">
     <!-- categorias -->
-    <h2 class="text-2xl font-serif mb-6">Categorías</h2>
+    <h2 class="text-2xl font-serif text-center mb-6">Categorías</h2>
     <label class="block text-gray-700 text-sm font-bold mb-2" for="categoria-input">Nombre</label>
     <div class="flex">
       <div class="flex-grow">
@@ -326,18 +329,21 @@
 
 <!-- seccion reportes -->
 
-<div class="shadow-lg shadow-blue-500/50 flex content-center"><!-- seccion reportes -->
-  <div><!-- reportes -->
+<div class="shadow-lg shadow-blue-500/50 w-full"><!-- seccion reportes -->
+  
+  <h2 class="text-2xl font-serif text-center mb-6">reportes</h2>
+    
+  <div class="flex justify-center " ><!-- reportes -->
    
+      
 
-      <h2 class="text-2xl font-serif">Reportes</h2>
-       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6 py-6">
+       <div class="flex flex-col gap-6 my-6 py-6">
          <div class="flex flex-col items-center">
             <div class="flex  justify-center my-8 p-4 w-96">
                 <img src="imagenes/reportes.svg" alt="operaciones insuficientes">
             </div>
-            <p class="text-center mt-6 text-lg font-bold">Operaciones insuficientes</p>
-            <p class="text-center text-sm">Prueba agregando más operaciones</p>
+            <p class="text-center mt-6 text-lg font-sans">Operaciones insuficientes</p>
+            <p class="text-center text-sm font-sans">Prueba agregando más operaciones</p>
          </div>
       </div>
   
@@ -345,6 +351,54 @@
   </div><!--  reportes -->
 </div><!-- seccion reportes -->
        
+
+<!-- --------------------listado reportes------------------------------------------- -->
+
+<div class="shadow-lg shadow-blue-500/50 w-full p-6">
+  <!-- inicio div contenedor listado -->
+
+  <!-- reportes -->
+  <div class="section mb-5">
+    <h2 class="text-2xl font-serif mb-5 pb-4 text-center">Resumen</h2>
+    <div id="reporte-resumen"></div>
+  </div>
+  <!-- ------------------------------------------ -->
+  <!-- totales por categoria -->
+  <div class="section mb-5">
+    <h2 class="text-lg font-serif mb-5 pb-4">Totales por categoría</h2>
+    <div class="grid grid-cols-4 gap-4 font-medium mb-5">
+      <div class="blue-cero">Categoría</div>
+      <div class="blue-cero">Ganancias</div>
+      <div class="red-cero">Gastos</div>
+      <div>Balance</div>
+    </div>
+    <div id="reporte-total-categorias"></div>
+  </div>
+  <!-- totales por mes -->
+  <div class="section mb-5">
+    <h2 class="text-lg font-serif mb-5 pb-4">Totales por mes</h2>
+    <div class="grid grid-cols-4 gap-4 font-medium mb-5">
+      <div>Mes</div>
+      <div class="blue-cero">Ganancias</div>
+      <div class="red-cero">Gastos</div>
+      <div>Balance</div>
+    </div>
+    <div id="reporte-total-mes"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- fin div contenedor listado  -->
+
 <!-- ------------------------------------------------ -->
 
 </div><!-- fin div contenedor  -->
