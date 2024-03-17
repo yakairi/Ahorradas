@@ -20,8 +20,15 @@
 
     colors: {
     primary: "#949ac9",
-    secondary: "#005eff",
-     border: "#1414b8",
+    secondary: "#082145",
+    border: "#1414b8",
+    tertiary:"#1972b7",
+    fontPrimary:"#ffffff",
+    fontSecondary: "#57585b",
+    fontHover:"#f8cd51",
+    fontTertiary:"#838EA2",
+
+
     },
 
     fontFamily: {
@@ -44,9 +51,9 @@
         
     };
     </script>
-</head>
+<head>
 <body>
-    
+  
   
              
 <main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5 ">
@@ -67,20 +74,36 @@
 
                         <div>
                             <h3>ganancias</h3>
-                        </div>
-
-                        <div class="text-green-600">
-                 
-                           <span>+$</span>
-                           <span>0</span>
-                        </div>
-
-                    </div><!-- fin ganancias  -->
-
-                <div class="flex columns-2 justify-between"><!-- gastos  -->
-                    <div>
-                        <h3>gastos</h3>
+=======
+    <header>
+        <nav class="bg-secondary">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="#" class= " text-white text-2xl "> 
+                            <img src="images/logo.png" alt="Logo de la empresa" class="w-40 h-30 transform hover:scale-110 transition-transform"></a>
                     </div>
+                    <!-- Links -->
+                    <div class="hidden md:block">
+                        <div class=" font-serif flex items-center">
+                            <a href="#" class="flex items-center text-fontTertiary
+                             hover:text-fontPrimary  transition duration-300 px-3 py-2">
+                                <i class="fas fa-chart-line px-2 py-2"></i>
+                                Balance
+                            </a>
+                            <a href="#" class="flex items-center text-fontTertiary hover:text-fontPrimary transition duration-400 px-3 py-2">
+                                <i class="fas fa-tags px-2"></i>
+                                Categoria
+                            </a>
+                            <a href="#" class=" flex items-center text-fontTertiary hover:text-fontPrimary transition duration-300  px-3 py-2">
+                                <i class="fas fa-file-alt px-2 "></i>
+                                Reportes
+                            </a>
+>>>>>>> fusio-feature
+                        </div>
+                    </div>
+<<<<<<< HEAD
 
                     <div class="text-red-600" >
                         <span>-$</span>
@@ -112,12 +135,19 @@
 <div class="flex flex-col p-1 shadow-lg shadow-blue-500/50"><!-- inicio seccion filtros -->
  
    <div class="flex columns justify-between gap-4 items-center p-5 shadow-lg " >  <!-- contenedor filtros -->
+=======
+                </div>
+            </div>
+        </nav>
+    </header>  
+    <main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5">
+>>>>>>> fusio-feature
 
 
-           <div>
-               <h2 class="font-serif text-xl ">filtros</h2>
-           </div>
+
+        <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
         
+<<<<<<< HEAD
            <div class="px-3 rounded-lg hover:text-dark bg-primary  hover:bg-secondary   "> <!-- boton ocultar filtros -->
              <button>ocultar filtros</button>
            </div><!-- boton ocultar filtros -->
@@ -212,14 +242,109 @@
                    
                     <div  class="text-2xl ">
                         <p>sin resultados disponibles</p>
+=======
+        <div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
+        <!-- contebedores principales -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+                         <div class="p-4">  <!-- contenedor balance  -->
+                          
+                             <h2 class="font-sans font-semibold text-xl text-center text-fontSecondary"> Balance</h2>
+        
+                        <div class="text-lg flex flex-col gap-2  drop-shadow-2xl" > <!--  balance  -->
+>>>>>>> fusio-feature
                         
-                    </div>
-                    <div class="text-lg">
-                        <p>Revisa tus filtros o añade nuevas operaciones</p>
-                    </div>
-
-                 </div><!-- contenedor texto operaciones -->
+                            <div class="flex columns-2 justify-between"><!-- ganacias  -->
+        
+                                <div>
+                                    <h3>Ganancias</h3>
+                                </div>
+        
+                                <div class="text-green-600">
+                         
+                                   <span>+$</span>
+                                   <span>0</span>
+                                </div>
+        
+                            </div><!-- fin ganancias  -->
+        
+                        <div class="flex columns-2 justify-between"><!-- gastos  -->
+                            <div>
+                                <h3>Gastos</h3>
+                            </div>
+        
+                            <div class="text-red-600" >
+                                <span>-$</span>
+                                <span>0</span>
+                            </div>
+                        </div><!-- fin gastos  -->
+        
+                        <div class="flex columns-2 justify-between text-2xl "><!--total -->
+                           
+                            <div>
+                                <h3>Total</h3>
+                            </div>
+                            
+                            <div>
+                                <spa>$</spa>
+                                <spa>0</spa>
+                            </div>
+        
+                        </div><!-- fin total  -->
+        
+                    </div> <!-- fin balance  -->
+                </div> <!--fin contenedor balance  -->
+         
+        
+         <!--        FILTROS         -->
+        
+         <!--seccion filtros -->
+                 
+         
+           <div class="flex columns justify-between gap-4 items-center p-5" >  <!-- contenedor filtros -->
+        
+        
+                   <div>
+                       <h2 class="font-sans font-semibold text-xl text-fontSecondary">Filtros</h2>
+                   </div>
+                
+                   <div class="font-sans font-semibold text-fontPrimary rounded-lg bg-secondary  hover:text-fontHover transition duration-300  px-3 py-2 "> <!-- boton ocultar filtros -->
+                     <button>Ocultar filtros</button>
+                   </div><!-- boton ocultar filtros -->
+        
+           
+          </div> <!--fin contenedor filtros  -->
+        
+                    
+            <div class="flex flex-col gap-5">    <!-- inputs tipo filtro-->
+                  
+        
+                      <label for="type-filters" class="text-fontSecondary">Tipo</label>
+                      
+                    <select name="tipos-filtros" id="type-filters" class=" text-fontPrimary bg-tertiary rounded p-1 ">
+                        <option value="TODOS">Todos</option>
+                        <option value="GASTOS">Gasto</option>
+                        <option value="GANANCIA">Ganancia</option>
+                   </select>
+            </div>    <!-- fin inputs tipo filtro-->
+        
+         <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- inputs filtros categorias-->
+        
+                   <label for="type-category" class="text-fontSecondary">Categoría</label>
+                      
+                          <select name="categorias" id="type-category" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent ">
+                        
+                            <option value="Todas" class="text-pr">Todas</option>
+                            <option value="Comida">Comida</option>
+                            <option value="Servicio">Servicio</option>
+                            <option value="Salidas">Salidas</option>
+                            <option value="Educación">Educación</option>
+                            <option value="Transporte">Transporte</option>
+        
+                          </select>       <!--fin inputs filtros categorias-->
                    
+<<<<<<< HEAD
                </div>   <!-- fin seccion operaciones -->
 
 <!--------------------seccion  categorias----------------------------------------------- -->
@@ -415,5 +540,82 @@
 </main>
 
 
+=======
+        
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- inputs filtros tipo fecha-->
+        
+                   <label for="expense-date" class="text-fontSecondary">Desde</label>
+                      
+                      <input id="expense-date" type="date" name="date" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent  " />
+        
+                      <!-- INPUT ORDENAR POR-->
+        
+                       <label for="order-expense" class="text-fontSecondary">Ordenar por</label>
+            
+                          <select  name="Ordenar" id="order-expense" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent  ">
+                       
+                             <option value="Más reciente">Más reciente</option>
+                             <option value="Más antiguo">Más antiguo</option>
+                             <option value="Mayor monto">Mayor monto</option>
+                             <option value="Menor monto">Menor monto</option>
+                             <option value="A/Z">A/Z</option>
+                             <option value="Z/A">Z/A</option>
+                      
+                          </select>
+        
+        </div><!-- fin inputs filtros -->
+                  
+        
+        <!-- seccion operaciones -->
+        
+                      <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center "> <!-- seccion operaciones -->
+        
+                          <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
+                            
+                            <div>
+                                <h2  class="font-sans font-bold text-xl text-fontSecondary">Operaciones</h2>
+                            </div>
+                            <div>
+                                <button class=" font-sans font-semibold text-fontPrimary rounded-lg bg-secondary  hover:text-fontHover transition duration-300 ease-in-out px-3 py-2 ">
+                                Nueva operacion
+                                </button>
+                            </div>
+        
+        
+                          </div> <!--fin contenedor operaciones -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+         <div class="flex flex-col justify-center items-center"><!-- contenedor imagen operaciones -->
+        
+                             <div class="flex  justify-center my-8 p-4 w-96 "> 
+                                <img src="svc/undraw_savings_re_eq4w.svg" alt="imagen representativa">
+                             </div>
+                 
+                         </div><!--fin contenedor imagen operaciones -->
+        
+                         <div class="flex flex-col font-sans hover:text-fontHover justify-center text-center text-fontSecondary" ><!-- contenedor texto operaciones -->
+                           
+                            <div  class=" text-2xl ">
+                                <p>Sin resultados disponibles</p>
+                                
+                            </div>
+                            <div class="text-lg">
+                                <p>Revisa tus filtros o añade nuevas operaciones</p>
+                            </div>
+        
+                         </div><!-- contenedor texto operaciones -->
+                           
+                       </div>   <!-- fin seccion operaciones -->
+        
+        
+        
+        
+        
+        </div><!-- fin div contenedor  -->
+        
+        </section><!-- fin seccion contenedor -->
+        
+        </main>
+>>>>>>> fusio-feature
 </body>
 </html>
