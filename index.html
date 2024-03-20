@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ahorradas</title>
+    <title>Y-M ahorradas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Protest+Riot&display=swap" rel="stylesheet">
-
 <script src="https://kit.fontawesome.com/45fa939a1d.js" crossorigin="anonymous"></script>
- <link rel="icon" href="imagenes/images.jpg" type="image/x-icon">
+ <link rel="icon" href="svc/logo-pestaña.png"type="image/x-icon">
 
 <script>
 
@@ -35,54 +34,21 @@
     sans: ['"Dosis"'],
     serif: ['"Protest Riot"'],
             },
-    screens: {
-      'tablet': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'desktop': '1280px',
-      // => @media (min-width: 1280px) { ... }
-    },
+    
           },
         }
-
-        
     };
     </script>
-<head>
+</head>
 <body>
-  
-  
-             
-<main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5 ">
-
- <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor principal -->
-
-   <div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
-           <!-- contebedores principales -->
-<!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
-
-                 <div class="p-4 shadow-lg shadow-blue-500/50">  <!-- contenedor balance  -->
-                  
-                     <h2 class="font-serif text-xl text-center"> balance</h2>
-
-                <div class="text-lg flex flex-col gap-2  drop-shadow-2xl" > <!--  balance  -->
-                
-                    <div class="flex columns-2 justify-between"><!-- ganacias  -->
-
-                        <div>
-                            <h3>ganancias</h3>
-<!-- ======= -->
-    <header>
+   <header>
         <nav class="bg-secondary">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
                         <a href="#" class= " text-white text-2xl "> 
-                            <img src="images/logo.png" alt="Logo de la empresa" class="w-40 h-30 transform hover:scale-110 transition-transform"></a>
+                            <img src="svc/images/logo.png" alt="Logo de la empresa" class="w-40 h-30 transform hover:scale-110 transition-transform"></a>
                     </div>
                     <!-- Links -->
                     <div class="hidden md:block">
@@ -100,149 +66,17 @@
                                 <i class="fas fa-file-alt px-2 "></i>
                                 Reportes
                             </a>
-<!-- >>>>>>> fusio-feature -->
                         </div>
                     </div>
-<!-- <<<<<<< HEAD -->
-
-                    <div class="text-red-600" >
-                        <span>-$</span>
-                        <span>0</span>
-                    </div>
-                </div><!-- fin gastos  -->
-
-                <div class="flex columns-2 justify-between text-2xl py-4"><!--total -->
-                   
-                    <div>
-                        <h3>total</h3>
-                    </div>
-                    
-                    <div>
-                        <spa>$</spa>
-                        <spa>0</spa>
-                    </div>
-
-                </div><!-- fin total  -->
-
-            </div> <!-- fin balance  -->
-        </div> <!--fin contenedor balance  -->
- 
-
- <!--        FILTROS         -->
-
- <!--seccion filtros -->
-   
-<div class="flex flex-col p-1 shadow-lg shadow-blue-500/50"><!-- inicio seccion filtros -->
- 
-   <div class="flex columns justify-between gap-4 items-center p-5 shadow-lg " >  <!-- contenedor filtros -->
-<!-- ======= -->
                 </div>
             </div>
         </nav>
     </header>  
+
     <main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5">
-<!-- >>>>>>> fusio-feature -->
 
-
-
-        <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
+      <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
         
-<!-- <<<<<<< HEAD -->
-           <div class="px-3 rounded-lg hover:text-dark bg-primary  hover:bg-secondary   "> <!-- boton ocultar filtros -->
-             <button>ocultar filtros</button>
-           </div><!-- boton ocultar filtros -->
-
-   
-  </div> <!--fin contenedor filtros  -->
-
-            
-    <div class="flex flex-col gap-5">    <!-- inputs tipo filtro-->
-          
-
-              <label for="type-filters">Tipo</label>
-              
-            <select name="tipos-filtros" id="type-filters" class="bg-primary rounded p-1 ">
-                <option value="TODOS">Todos</option>
-                <option value="GASTOS">Gasto</option>
-                <option value="GANANCIA">Ganancia</option>
-           </select>
-    </div>    <!-- fin inputs tipo filtro-->
-
- <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<!-- inputs filtros categorias-->
-
-           <label for="type-category">Categoría</label>
-              
-                  <select name="categorias" id="type-category" class="bg-primary rounded p-1 hover:bg-accent ">
-                
-                    <option value="Todas">Todas</option>
-                    <option value="Comida">Comida</option>
-                    <option value="Servicio">Servicio</option>
-                    <option value="Salidas">Salidas</option>
-                    <option value="Educación">Educación</option>
-                    <option value="Transporte">Transporte</option>
-
-                  </select>       <!--fin inputs filtros categorias-->
-           
-
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<!-- inputs filtros tipo fecha-->
-
-           <label for="expense-date">Desde</label>
-              
-              <input id="expense-date" type="date" name="date" class="bg-primary rounded p-1 hover:bg-accent  " />
-
-              <!-- INPUT ORDENAR POR-->
-
-               <label for="order-expense">Ordenar por</label>
-    
-                  <select  name="Ordenar" id="order-expense" class="bg-primary rounded p-1 hover:bg-accent  ">
-               
-                     <option value="Más reciente">Más reciente</option>
-                     <option value="Más antiguo">Más antiguo</option>
-                     <option value="Mayor monto">Mayor monto</option>
-                     <option value="Menor monto">Menor monto</option>
-                     <option value="A/Z">A/Z</option>
-                     <option value="Z/A">Z/A</option>
-              
-                  </select>
-
-</div><!-- fin inputs filtros -->
-          
-</div><!-- fin seccion filtros -->
-
-
-<!-- inicioseccion operaciones -->
-
-              <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center shadow-lg shadow-blue-500/50  "> <!-- seccion operaciones -->
-
-                  <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
-                    
-                    <div>
-                        <h2  class="font-serif text-xl">operaciones</h2>
-                    </div>
-                    <div>
-                        <button class=" px-3 rounded-lg  bg-primary  hover:bg-secondary" >
-                            nueva operacion
-                        </button>
-                    </div>
-
-
-                  </div> <!--fin contenedor operaciones -->
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
- <div class="flex flex-col justify-center items-center  "><!-- contenedor imagen operaciones -->
-
-                     <div class="flex  justify-center my-8 p-4 w-96 "> 
-                        <img src="imagenes/undraw_savings_re_eq4w.svg"   alt="imagen representativa">
-                     </div>
-         
-                 </div><!--fin contenedor imagen operaciones -->
-
-                 <div class="flex flex-col font-sans justify-center text-center" ><!-- contenedor texto operaciones -->
-                   
-                    <div  class="text-2xl ">
-                        <p>sin resultados disponibles</p>
-=======
         <div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
         <!-- contebedores principales -->
         <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -252,7 +86,6 @@
                              <h2 class="font-sans font-semibold text-xl text-center text-fontSecondary"> Balance</h2>
         
                         <div class="text-lg flex flex-col gap-2  drop-shadow-2xl" > <!--  balance  -->
->>>>>>> fusio-feature
                         
                             <div class="flex columns-2 justify-between"><!-- ganacias  -->
         
@@ -344,14 +177,77 @@
         
                           </select>       <!--fin inputs filtros categorias-->
                    
-<<<<<<< HEAD
-               </div>   <!-- fin seccion operaciones -->
-
-<!--------------------seccion  categorias----------------------------------------------- -->
+        
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- inputs filtros tipo fecha-->
+        
+                   <label for="expense-date" class="text-fontSecondary">Desde</label>
+                      
+                      <input id="expense-date" type="date" name="date" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent  " />
+        
+                      <!-- INPUT ORDENAR POR-->
+        
+                       <label for="order-expense" class="text-fontSecondary">Ordenar por</label>
+            
+                          <select  name="Ordenar" id="order-expense" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent  ">
+                       
+                             <option value="Más reciente">Más reciente</option>
+                             <option value="Más antiguo">Más antiguo</option>
+                             <option value="Mayor monto">Mayor monto</option>
+                             <option value="Menor monto">Menor monto</option>
+                             <option value="A/Z">A/Z</option>
+                             <option value="Z/A">Z/A</option>
+                      
+                          </select>
+        
+        </div><!-- fin inputs filtros -->
+                  
+        
+        <!-- seccion operaciones -->
+        
+                      <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center shadow-lg shadow-blue-500/50"> <!-- seccion operaciones -->
+        
+                          <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
+                            
+                            <div>
+                                <h2  class="font-sans font-bold text-xl text-fontSecondary">Operaciones</h2>
+                            </div>
+                            <div>
+                                <button class=" font-sans font-semibold text-fontPrimary rounded-lg bg-secondary  hover:text-fontHover transition duration-300 ease-in-out px-3 py-2 ">
+                                Nueva operacion
+                                </button>
+                            </div>
+        
+        
+                          </div> <!--fin contenedor operaciones -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+         <div class="flex flex-col justify-center items-center"><!-- contenedor imagen operaciones -->
+        
+                             <div class="flex  justify-center my-8 p-4 w-96 "> 
+                                <img src="svc/undraw_savings_re_eq4w.svg" alt="imagen representativa">
+                             </div>
+                 
+                         </div><!--fin contenedor imagen operaciones -->
+        
+                         <div class="flex flex-col font-sans hover:text-fontHover justify-center text-center text-fontSecondary" ><!-- contenedor texto operaciones -->
+                           
+                            <div  class=" text-2xl ">
+                                <p>Sin resultados disponibles</p>
+                                
+                            </div>
+                            <div class="text-lg">
+                                <p>Revisa tus filtros o añade nuevas operaciones</p>
+                            </div>
+        
+                         </div><!-- contenedor texto operaciones -->
+                           
+                       </div>   <!-- fin seccion operaciones -->
+      
+        <!--------------------seccion  categorias----------------------------------------------- -->
 
 <!-- ------------------------------------------------------------------------------ -->
 
-<!-- md:column md:w-8/12 lg:w-10/12 md:offset-2 md:offset-1 -->
+
 
 <div class="w-full shadow-lg shadow-blue-500/50">
   <!-- seccion categorias -->
@@ -364,7 +260,7 @@
         <input class="w-full p-2 border border-gray-300 rounded focus:border-indigo-500 focus:outline-none" type="text" name="" id="categoria-input">
       </div>
       <div class="ml-2">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button class=" font-sans font-semibold text-fontPrimary rounded-lg bg-secondary  hover:text-fontHover transition duration-300 ease-in-out px-3 py-2">
           Agregar
         </button>
       </div>
@@ -373,7 +269,7 @@
     <div class="mt-6" id="categorias">
       <div class="mb-3">
         <div class="flex items-center">
-          <div class="flex-grow">
+          <div class="flex-grow  " >
             <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">Comida</span>
           </div>
           <div class="ml-4">
@@ -477,7 +373,7 @@
        <div class="flex flex-col gap-6 my-6 py-6">
          <div class="flex flex-col items-center">
             <div class="flex  justify-center my-8 p-4 ">
-                <img src="imagenes/reportes.svg" class="w-96"  alt="operaciones insuficientes">
+                <img src="svc/reportes.svg" class="w-96"  alt="operaciones insuficientes">
             </div>
             <p class="text-center mt-6 text-lg font-sans">Operaciones insuficientes</p>
             <p class="text-center text-sm font-sans">Prueba agregando más operaciones</p>
@@ -499,29 +395,70 @@
     <h2 class="text-2xl font-serif mb-5 pb-4 text-center">Resumen</h2>
     <div id="reporte-resumen"></div>
   </div>
+
+  <!-- reporte-resumen -->
+  <div class="p-5">
+    <h2 class="text-2xl mt-5 font-serif">Resumen</h2>
+    
+    <div class="grid grid-cols-1  gap-4 mt-2">
+        <div class="bg-gray-100 p-4 rounded-md">
+            <div class="font-semibold font-sans">Categoría con mayor ganancia</div>
+            <!-- Contenido aquí -->
+        </div>
+        <div class="bg-gray-100 p-4 rounded-md">
+            <div class="font-sans font-semibold ">Categoría con mayor gasto</div>
+            <!-- Contenido aquí -->
+        </div>
+        <div class="bg-gray-100 p-4 rounded-md">
+            <div class="font-sans font-semibold ">Categoría con mayor balance</div>
+            <!-- Contenido aquí -->
+        </div>
+        <div class="bg-gray-100 p-4 rounded-md">
+            <div class="font-sans font-semibold">Mes con mayor ganancia</div>
+            <!-- Contenido aquí -->
+        </div>
+        <div class="bg-gray-100 p-4 rounded-md">
+            <div class="font-sans font-semibold">Mes con mayor gasto</div>
+            <!-- Contenido aquí -->
+        </div>
+    </div>
+</div>
+
   <!-- ------------------------------------------ -->
+
+
+
+
+
+
   <!-- totales por categoria -->
-  <div class="section mb-5  ">
+
+
+<div class="section mb-5">
     <h2 class="text-lg font-serif mb-5 pb-4">Totales por categoría</h2>
-    <div class="grid grid-cols-4 gap-4 font-medium mb-5  ">
-      <div class="blue-cero">Categoría</div>
-      <div class="blue-cero">Ganancias</div>
-      <div class="red-cero">Gastos</div>
-      <div>Balance</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 font-medium mb-5">
+        <div class="bg-blue-100 p-4 rounded-md font-semibold">Categoría</div>
+        <div class="bg-blue-100 p-4 rounded-md font-semibold">Ganancias</div>
+        <div class="bg-red-100 p-4 rounded-md font-semibold">Gastos</div>
+        <div class="bg-gray-100 p-4 rounded-md font-semibold">Balance</div>
     </div>
     <div id="reporte-total-categorias"></div>
-  </div>
+</div>
+
+
+
+  <!--  -->
+  
   <!-- totales por mes -->
   <div class="section mb-5">
     <h2 class="text-lg font-serif mb-5 pb-4">Totales por mes</h2>
-    <div class="grid grid-cols-4 gap-4 font-medium mb-5">
-      <div>Mes</div>
-      <div class="blue-cero">Ganancias</div>
-      <div class="red-cero">Gastos</div>
-      <div>Balance</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 font-medium mb-5">
+        <div class="bg-blue-100 p-4 rounded-md font-semibold">Mes</div>
+        <div class="bg-blue-100 p-4 rounded-md font-semibold">Ganancias</div>
+        <div class="bg-red-100 p-4 rounded-md font-semibold">Gastos</div>
+        <div class="bg-gray-100 p-4 rounded-md font-semibold">Balance</div>
     </div>
     <div id="reporte-total-mes"></div>
-  </div>
 </div>
 
 
@@ -530,92 +467,16 @@
 <!-- ------------------------------------------------ -->
 
 
-
-
-
-</div><!-- fin div contenedor  -->
-
-</section><!-- fin seccion contenedor -->
-
-</main>
-
-
-=======
         
-        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <!-- inputs filtros tipo fecha-->
-        
-                   <label for="expense-date" class="text-fontSecondary">Desde</label>
-                      
-                      <input id="expense-date" type="date" name="date" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent  " />
-        
-                      <!-- INPUT ORDENAR POR-->
-        
-                       <label for="order-expense" class="text-fontSecondary">Ordenar por</label>
-            
-                          <select  name="Ordenar" id="order-expense" class=" text-fontPrimary bg-tertiary rounded p-1 hover:bg-accent  ">
+
+
+
                        
-                             <option value="Más reciente">Más reciente</option>
-                             <option value="Más antiguo">Más antiguo</option>
-                             <option value="Mayor monto">Mayor monto</option>
-                             <option value="Menor monto">Menor monto</option>
-                             <option value="A/Z">A/Z</option>
-                             <option value="Z/A">Z/A</option>
-                      
-                          </select>
-        
-        </div><!-- fin inputs filtros -->
-                  
-        
-        <!-- seccion operaciones -->
-        
-                      <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center "> <!-- seccion operaciones -->
-        
-                          <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
-                            
-                            <div>
-                                <h2  class="font-sans font-bold text-xl text-fontSecondary">Operaciones</h2>
-                            </div>
-                            <div>
-                                <button class=" font-sans font-semibold text-fontPrimary rounded-lg bg-secondary  hover:text-fontHover transition duration-300 ease-in-out px-3 py-2 ">
-                                Nueva operacion
-                                </button>
-                            </div>
-        
-        
-                          </div> <!--fin contenedor operaciones -->
-        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-         <div class="flex flex-col justify-center items-center"><!-- contenedor imagen operaciones -->
-        
-                             <div class="flex  justify-center my-8 p-4 w-96 "> 
-                                <img src="svc/undraw_savings_re_eq4w.svg" alt="imagen representativa">
-                             </div>
-                 
-                         </div><!--fin contenedor imagen operaciones -->
-        
-                         <div class="flex flex-col font-sans hover:text-fontHover justify-center text-center text-fontSecondary" ><!-- contenedor texto operaciones -->
-                           
-                            <div  class=" text-2xl ">
-                                <p>Sin resultados disponibles</p>
-                                
-                            </div>
-                            <div class="text-lg">
-                                <p>Revisa tus filtros o añade nuevas operaciones</p>
-                            </div>
-        
-                         </div><!-- contenedor texto operaciones -->
-                           
-                       </div>   <!-- fin seccion operaciones -->
-        
-        
-        
-        
         
         </div><!-- fin div contenedor  -->
         
         </section><!-- fin seccion contenedor -->
         
         </main>
->>>>>>> fusio-feature
 </body>
 </html>
