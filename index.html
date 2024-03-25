@@ -41,7 +41,7 @@
     </script>
 </head>
 <body>
-   <header>
+   <header class="md:shrink-0 ">
         <nav class="bg-secondary">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between h-16">
@@ -75,17 +75,17 @@
 
     <main class="flex justify-center flex-wrap w-full h-full gap-4 items-center p-5">
 
-      <section  class="flex  flex-wrap w-full h-full gap-4"><!--inicio seccion contenedor -->
+      <section  class="flex  flex-wrap w-full h-full gap-4 py-8 px-12 "><!--inicio seccion contenedor -->
         
-        <div class="flex flex-col   gap-4 "><!-- inicio div contenedor  -->
+        <div class="flex flex-col w-full md:w-60  gap-4 "><!-- inicio div contenedor  -->
         <!-- contebedores principales -->
         <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
-        
-                         <div class="p-4">  <!-- contenedor balance  -->
+                                                   
+                         <div class="p-4 p-6 shadow-lg shadow-blue-500/50 w-full  ">  <!-- contenedor balance  -->
                           
-                             <h2 class="font-sans font-semibold text-xl text-center text-fontSecondary"> Balance</h2>
+                             <h2 class="font-serif font-semibold text-xl text-center "> Balance</h2>
         
-                        <div class="text-lg flex flex-col gap-2  drop-shadow-2xl" > <!--  balance  -->
+                        <div class="text-lg flex flex-col gap-2  drop-shadow-2xl  " > <!--  balance  -->
                         
                             <div class="flex columns-2 justify-between"><!-- ganacias  -->
         
@@ -133,10 +133,8 @@
         
          <!--seccion filtros -->
                  
-         
-           <div class="flex columns justify-between gap-4 items-center p-5" >  <!-- contenedor filtros -->
-        
-        
+          <div class="flex flex-col gap-2 p-6 w-full shadow-lg shadow-blue-500/50 ">  <!-- contenedor total filtros -->
+               <div class="flex columns justify-between gap-2 items-center p-5" >  <!-- contenedor filtros -->
                    <div>
                        <h2 class="font-sans font-semibold text-xl text-fontSecondary">Filtros</h2>
                    </div>
@@ -146,7 +144,7 @@
                    </div><!-- boton ocultar filtros -->
         
            
-          </div> <!--fin contenedor filtros  -->
+                </div> <!--fin contenedor filtros  -->
         
                     
             <div class="flex flex-col gap-5">    <!-- inputs tipo filtro-->
@@ -201,13 +199,13 @@
                           </select>
         
         </div><!-- fin inputs filtros -->
-                  
-        
+   </div>         <!-- contenedor total filtros -->        
+      
         <!-- seccion operaciones -->
         
-                      <div class="shadow-md w-4/5 rounded-lg bg-[#fff] justify-center shadow-lg shadow-blue-500/50"> <!-- seccion operaciones -->
+                      <div class="shadow-md w-3/4 my-8  rounded-lg m-auto bg-[#fff] justify-center shadow-lg shadow-blue-500/50 "> <!-- seccion operaciones -->
         
-                          <div class="flex columns-2 justify-evenly gap-2 items-center"> <!-- contenedor operaciones -->
+                          <div class="flex columns-2 justify-between gap-2 items-center px-5 py-5 flex-wrap" > <!-- contenedor operaciones -->
                             
                             <div>
                                 <h2  class="font-sans font-bold text-xl text-fontSecondary">Operaciones</h2>
@@ -221,11 +219,14 @@
         
                           </div> <!--fin contenedor operaciones -->
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-         <div class="flex flex-col justify-center items-center"><!-- contenedor imagen operaciones -->
+         <div class="flex flex-col justify-center items-center  overflow-y-auto w-9/12 m-auto"><!-- contenedor imagen operaciones -->
         
-                             <div class="flex  justify-center my-8 p-4 w-96 "> 
-                                <img src="svc/undraw_savings_re_eq4w.svg" alt="imagen representativa">
-                             </div>
+                          <div class="flex  justify-center md:shrink-0  "> 
+                              <div>
+                       <img src="svc/undraw_savings_re_eq4w.svg" class="  w-full object-cover md:w-96 sm:w-full " alt="imagen representativa">
+                              </div>
+                             
+                          </div>
                  
                          </div><!--fin contenedor imagen operaciones -->
         
@@ -242,6 +243,9 @@
                          </div><!-- contenedor texto operaciones -->
                            
                        </div>   <!-- fin seccion operaciones -->
+
+
+                       
       
         <!--------------------seccion  categorias----------------------------------------------- -->
 
@@ -249,12 +253,12 @@
 
 
 
-<div class="w-full shadow-lg shadow-blue-500/50">
+<div class="w-full shadow-lg shadow-blue-500/50 md:w-9/12 m-auto ">
   <!-- seccion categorias -->
   <div class="bg-white rounded-lg shadow-md p-6 ">
     <!-- categorias -->
     <h2 class="text-2xl font-serif text-center mb-6">Categorías</h2>
-    <label class="block text-gray-700 text-sm font-bold mb-2" for="categoria-input">Nombre</label>
+    <label class="block text-gray-700   text-sm font-bold mb-2" for="categoria-input">Nombre</label>
     <div class="flex">
       <div class="flex-grow">
         <input class="w-full p-2 border border-gray-300 rounded focus:border-indigo-500 focus:outline-none" type="text" name="" id="categoria-input">
@@ -270,7 +274,7 @@
       <div class="mb-3">
         <div class="flex items-center">
           <div class="flex-grow  " >
-            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">Comida</span>
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg bg-blue-100  text-center ">Comida</span>
           </div>
           <div class="ml-4">
             <a href="#" aria-label="icono editar" class="text-sm text-blue-500 hover:text-blue-700 mr-2">
@@ -288,7 +292,7 @@
       <div class="mb-3">
         <div class="flex items-center">
           <div class="flex-grow">
-            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">trabajo</span>
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg bg-blue-100 text-center  ">trabajo</span>
           </div>
           <div class="ml-4">
             <a href="#" aria-label="icono editar" class="text-sm text-blue-500 hover:text-blue-700 mr-2">
@@ -302,14 +306,14 @@
       </div>
     </div>
     <!-- categoria servicios -->
-    <div class="mt-6" id="categorias">
+    <div class="mt-6 " id="categorias">
       <div class="mb-3">
         <div class="flex items-center">
           <div class="flex-grow">
-            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">Servicios</span>
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg bg-blue-100 text-center  ">Servicios</span>
           </div>
           <div class="ml-4">
-            <a href="#" aria-label="icono editar" class="text-sm text-blue-500 hover:text-blue-700 mr-2">
+            <a href="#" aria-label="icono editar" class="text-sm text-blue-500 w-48:text-blue-700 mr-2">
               <i class="fa-regular fa-pen-to-square"></i>
             </a>
             <a href="#" aria-label="icono eliminar" class="text-sm text-red-500 hover:text-red-700">
@@ -324,7 +328,7 @@
       <div class="mb-3">
         <div class="flex items-center">
           <div class="flex-grow">
-            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">educacion</span>
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg bg-blue-100  text-center ">educacion</span>
           </div>
           <div class="ml-4">
             <a href="#" aria-label="icono editar" class="text-sm text-blue-500 hover:text-blue-700 mr-2">
@@ -342,7 +346,7 @@
       <div class="mb-3">
         <div class="flex items-center">
           <div class="flex-grow">
-            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg">transporte</span>
+            <span class="inline-block py-1 px-2 text-gray-700 border border-gray-300 rounded-lg bg-blue-100  text-center   ">transporte</span>
           </div>
           <div class="ml-4">
             <a href="#" aria-label="icono editar" class="text-sm text-blue-500 hover:text-blue-700 mr-2">
@@ -357,12 +361,15 @@
     </div>
   </div><!-- fin categorias -->
 </div><!-- fin seccion categorias -->
-     
+       
+
+
+
 <!-- ---------------------------------------------------------------------------------- -->
 
 <!-- seccion reportes -->
 
-<div class="shadow-lg shadow-blue-500/50 w-full"><!-- seccion reportes -->
+<div class="shadow-lg shadow-blue-500/50 w-full md:w-9/12 m-auto "><!-- seccion reportes -->
   
   <h2 class="text-2xl font-serif text-center mb-6">reportes</h2>
     
@@ -467,10 +474,7 @@
 <!-- ------------------------------------------------ -->
 
 
-        
-
-
-
+    
                        
         
         </div><!-- fin div contenedor  -->
@@ -478,5 +482,6 @@
         </section><!-- fin seccion contenedor -->
         
         </main>
+        <script src="main.js"></script>
 </body>
 </html>

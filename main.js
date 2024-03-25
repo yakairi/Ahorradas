@@ -3,3 +3,5 @@ document.getElementById('miBoton').addEventListener('click', function() {
     document.getElementById('cortina').classList.toggle('opacity-100');
     document.getElementById('cortina').classList.toggle('pointer-events-auto');
 });
+
+
